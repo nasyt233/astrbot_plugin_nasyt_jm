@@ -1,0 +1,2 @@
+# astrbot_plugin_nasyt_jm
+基于nasyt脚本的jmcomic下载查询astrbot插件 
