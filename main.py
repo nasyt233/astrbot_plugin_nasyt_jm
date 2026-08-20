@@ -44,7 +44,7 @@ class NasytJmPlugin(Star):
             yield event.plain_result("⚠️ 用法：/js 后面跟参数，例：/js 350234")
             return
         cmd = f"nasyt {args}"
-        logger.info(f"[nasyt jv] 执行命令: {cmd}")
+        logger.info(f"[nasyt js] 执行命令: {cmd}")
         res = await self._run_cmd(cmd)
         md_text = f"```\n{res}\n```"
         yield event.plain_result(md_text)
