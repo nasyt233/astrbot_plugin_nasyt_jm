@@ -1,6 +1,6 @@
 name: nasyt_jm
 display_name: nasyt工具扩展jm 
 desc: 基于nasyt脚本的jmcomic下载查询插件 
-version: v0.0.1 
+version: v0.0.2 
 author: NAS油条 
 repo: https://github.com/nasyt233/astrbot_plugin_nasyt_jm 
