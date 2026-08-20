@@ -38,7 +38,7 @@ class NasytJmPlugin(Star):
         yield event.plain_result(md_text)
     
     @filter.command("js")
-    async def cmd_jv(self, event: AstrMessageEvent):
+    async def cmd_js(self, event: AstrMessageEvent):
         args = event.message_str.strip().removeprefix("/js").strip()
         if not args:
             yield event.plain_result("⚠️ 用法：/js 后面跟参数，例：/js 350234")
