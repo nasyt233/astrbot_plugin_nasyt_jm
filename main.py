@@ -37,7 +37,7 @@ class NasytJmPlugin(Star):
         md_text = f"```\n{res}\n```"
         yield event.plain_result(md_text)
     
-    filter.command("js")
+    @filter.command("js")
     async def cmd_jv(self, event: AstrMessageEvent):
         args = event.message_str.strip().removeprefix("/js").strip()
         if not args:
