@@ -36,7 +36,19 @@ class NasytJmPlugin(Star):
         res = await self._run_cmd(cmd)
         md_text = f"```\n{res}\n```"
         yield event.plain_result(md_text)
-
+    
+    filter.command("js")
+    async def cmd_jv(self, event: AstrMessageEvent):
+        args = event.message_str.strip().removeprefix("/js").strip()
+        if not args:
+            yield event.plain_result("⚠️ 用法：/js 后面跟参数，例：/js 350234")
+            return
+        cmd = f"nasyt {args}"
+        logger.info(f"[nasyt jv] 执行命令: {cmd}")
+        res = await self._run_cmd(cmd)
+        md_text = f"```\n{res}\n```"
+        yield event.plain_result(md_text)
+    
     @filter.command("jm")
     async def cmd_j(self, event: AstrMessageEvent):
         args = event.message_str.strip().removeprefix("/j").strip()
