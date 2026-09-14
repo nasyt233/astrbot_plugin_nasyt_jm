@@ -32,9 +32,9 @@ class NasytJmPlugin(Star):
     @filter.command("jv")
     async def cmd_jv(self, event: AstrMessageEvent):
         # 管理员校验（推荐，普通用户不允许调用）
-        if not event.is_admin():
-            yield event.plain_result("⚠️ 仅管理员可用该指令")
-            return
+        # if not event.is_admin():
+            # yield event.plain_result("⚠️ 仅管理员可用该指令")
+            # return
 
         raw = event.message_str.strip().removeprefix("/jv").strip()
         if not raw:
@@ -49,9 +49,9 @@ class NasytJmPlugin(Star):
 
     @filter.command("js")
     async def cmd_js(self, event: AstrMessageEvent):
-        if not event.is_admin():
-            yield event.plain_result("⚠️ 仅管理员可用该指令")
-            return
+        # if not event.is_admin():
+            # yield event.plain_result("⚠️ 仅管理员可用该指令")
+            # return
 
         raw = event.message_str.strip().removeprefix("/js").strip()
         if not raw:
@@ -65,9 +65,9 @@ class NasytJmPlugin(Star):
 
     @filter.command("jm")
     async def cmd_j(self, event: AstrMessageEvent):
-        if not event.is_admin():
-            yield event.plain_result("⚠️ 仅管理员可用该指令")
-            return
+        # if not event.is_admin():
+            # yield event.plain_result("⚠️ 仅管理员可用该指令")
+            # return
 
         raw = event.message_str.strip().removeprefix("/jm").strip()
         if not raw:
